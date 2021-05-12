@@ -1,0 +1,62 @@
+body{  
+    border:black 5px;
+    background-color: azure; 
+    background: linear-gradient(#eb9729, azure);
+} 
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    
+}
+
+.header{ 
+    /* background-color: coral; */
+    text-align: center; 
+    color:rgb(7, 4, 0);
+    background: linear-gradient(#eb9729, azure);
+    
+}
+.box{ 
+    /* background-color: coral; */
+    color:azure;
+    display: flex;
+    padding:50px 50px;
+    border:dashed black 5px; 
+    margin: 10px 10px 10px 10px; 
+    position:relative; 
+    width: 15vw; 
+    height: 20vh;
+    background: linear-gradient(#eb9729, azure);
+    
+}  
+.box-title{
+    position:absolute; 
+    left: 10px; 
+    right: 10px; 
+    top: -10px; 
+    border: 5px dashed black; 
+    text-align: center;
+}
+.box:hover{
+    box-shadow:rgb(7, 4, 0) 10px 5px 5px; 
+
+} 
+.footer{
+    text-align: center;
+} 
+.box p {
+    user-select: all; 
+    color:rgb(7, 4, 0)
+}
+
+@media screen and (max-width: 768px) {
+    .box { width: 25vw; 
+    height: 25vh }
+} 
+@media screen and (max-width: 525px) {
+    .box { width: 55vw; 
+        margin: 42px;
+    }
+}
